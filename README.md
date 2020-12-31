@@ -1,1 +1,1 @@
-# JS-and-Vue-basics
+# JavaScript Basics
