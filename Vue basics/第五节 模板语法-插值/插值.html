@@ -1,0 +1,40 @@
+<script src="https://npmcdn.com/vue/dist/vue.js"></script>
+
+
+<div id="app">
+
+    <!-- 这玩意必须写在div里面，不然不起效果 -->
+     <p>
+      <!--  将字符串拆分成字母，返回一个数组，将这个数组反序，反序之后再进行一个结合，结合成一个字符串 -->
+       {{ message.split('').reverse().join('') }}
+    </p>
+    
+    {{message}}
+    
+    <!--  方法一： 数据绑定最常见的形式就是使用 双大括号 文本插值  -->
+    {{msg}}
+    
+    <!--  方法二： v-html rawHtml放到data的属性里面 -->
+    <p> Using mustaches: {{ rawHtml}} </p>
+    <p v-html="rawHtml"></p>   
+     <!-- 方法三： v-bind 里面的color也是放到data的属性里面 -->
+    <div v-bind:class="color">Lord Of Rings</div>
+    
+    
+    <!--   运算表达式 参数可以在下面的data里面定义  -->
+    <p>
+     {{ number + 1}} {{ ok *2 + 10}}
+    
+    </p>
+    <p>
+     {{1==3 ? 'YES':'No'}}
+    </p>
+   
+    
+      
+</div>
+
+<style type="text/css">
+ .red{ color : gold; font-size: 60px; font-family: Centaur;background: black;margin-left: 10%; margin-right: 20%;  }
+ .blue{color: white; font-size:40px;  font-weight: bold; font-family: Arial ; background: grey; margin-left: 10%; margin-right: 15%; }
+</style>
