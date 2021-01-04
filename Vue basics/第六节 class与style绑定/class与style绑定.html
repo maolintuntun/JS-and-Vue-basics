@@ -1,0 +1,20 @@
+<script src="https://npmcdn.com/vue/dist/vue.js"></script>
+
+
+<div id="app">
+
+   <div class="test"
+   v-bind:class="{ active: isActive, green : isGreen}"
+   style="width:200px; height:200px; text-align:center; line-height:200px;">
+     hi gege
+   </div>
+   
+    
+      
+</div>
+
+<style type="text/css">
+ .test{font-size: 30px;}
+ .green{color: #00FF00;}
+ .active{background: #FF0000;}
+</style>
