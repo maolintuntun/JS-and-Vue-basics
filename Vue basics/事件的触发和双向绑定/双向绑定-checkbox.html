@@ -1,0 +1,25 @@
+<script src="https://npmcdn.com/vue/dist/vue.js"></script>
+
+ <!-- 想想checkbox由哪几部分 
+    1.一个方格 
+    2.旁边的标签文字 input的value里面写这个，另外，下面要用label标签 里面带着刚刚input里面这个id。
+    3.双向绑定的 v-model=什么东西？
+    4.不同方格的id 
+    5.下面一行出现的数组 -->
+
+
+<div id="app4">
+ 	<input type="checkbox"  id="jack" value="Jack" v-model="names">
+ 	<label for="jack"> Jack </label>
+
+ 	<input type="checkbox"  id="mary" value="Mary" v-model="names">
+  <label for="mary">Mary </label>
+
+ 	<input type="checkbox"  id="elsa" value="Elsa" v-model="names">
+  <label for="elsa">Elsa </label>
+
+    <br>
+    <span> Name:{{ names }}</span>
+    <br>
+
+</div>
