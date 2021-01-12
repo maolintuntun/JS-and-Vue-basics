@@ -1,0 +1,45 @@
+<script src="https://npmcdn.com/vue/dist/vue.js"></script>
+
+
+<div id="app">
+<div>
+    <input v-model="message" placeholder="edit me">
+    <p> Message is: {{ message }} </p>
+   <!--  双向绑定所对应的data对象的属性是message -->
+   <!--  placeholder是背景字体 是edit me -->
+   
+    <textarea v-model="message2" placeholder="add multiple lines"></textarea>
+    <p style="white-space: pre-line">{{ message2 }} </p>
+    <br />   
+</div>
+
+
+<div>
+     <input type="checkbox" id="jack" value="Jack" v-model="checkedNames">
+     <label for="jack">Jack</label>
+     <input type="checkbox" id="john" value="John" v-model="checkedNames">
+     <label for="jack">John</label> 
+     <input type="checkbox" id="mike" value="Mike" v-model="checkedNames">
+     <label for="jack">Mike</label>
+     <br>
+     <span> Checked names: {{ checkedNames }} </span>
+</div>
+
+  <div style="margin-top:20px;">
+     <input type="radio" id="one" value="One" v-model="picked">
+     <label for="one">One</label>
+     <br>
+     
+     <input type="radio" id="two" value="Two" v-model="picked">
+     <label for="two">Two</label>
+     <br>
+     <span>Picked: {{ picked }} </span>
+     
+  </div>
+</div>
+
+
+
+<!-- v-model 指令用来在 input、select、textarea、checkbox、radio 等表单控件元素上创建双向数据绑定，根据表单上的值，自动更新绑定的元素的值。
+
+按钮的事件我们可以使用 v-on 监听事件，并对用户的输入进行响应。 -->
